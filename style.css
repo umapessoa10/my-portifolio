@@ -1,0 +1,179 @@
+/*This website was made by Felipe domingueti //// Felipe_Offlin3*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #FEF3E0;
+    overflow-x: hidden;
+}
+
+.menu {
+    position: sticky;
+    width: 100vw;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-div span {
+    font-size: 32px;
+    margin: 0;
+    font-weight: normal;
+    color: white;
+}
+
+.logo-div img {
+    height: 50px;
+}
+
+.my-profile {
+    display: flex;
+    align-items: center;
+}
+
+.my-profile img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.my-profile > img:hover ~ .profile-div, .profile-div:hover {
+    display: block;
+}
+
+.profile-div {
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 20%;
+    display: none;
+    transition: 0.3s ease;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.long-div {
+    width: 100vw;
+    height: 250px;
+    background-image: url(images/banner/1.png);
+    background-size: auto 100%;
+}
+
+.shade-to-black {
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(50, 50, 50), rgba(255, 255, 255, 0.015));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: none;
+    height: 300px;
+}
+
+.project {
+    border: 5px solid rgb(201, 201, 201);
+    padding: 5px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    height: 80%;
+    width: 250px;
+    background-color: white;
+}
+
+.project:hover .project-description {
+    display: block;
+}
+
+.project-description {
+    background-color: black;
+    opacity: 0.8;
+    width: 250px;
+    height: 240px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    overflow-y: scroll;
+    text-align: center;
+    color: white;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.about-me {
+    width: 100%;
+    color: white;
+    background-color: #FFA500;
+    
+}
+
+.about-me .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 1px 70%;
+    padding-top: 15px; padding-bottom: 15px;
+}
+
+.grid .image-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid .image {
+    border-radius: 60%;
+}
+
+.grid .vertical-line {
+    width: 50%;
+    height: 100%;
+    border: 3px white solid;
+}
+.grid .description {
+    padding-left: 15px;
+    width: 100%;
+}
+
+.makecode-button {
+    color: white;
+    background: #028B9B;
+    border: none;
+    box-shadow: 0px 10px 2px rgba(red, green, blue, alpha);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.makecode-button:hover {
+    transform: scale(1.1);
+    background: #005E6C;
+    font-weight: bold;
+}

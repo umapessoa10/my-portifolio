@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Domingueti</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo-div">
+            <img src="images/logo.png" alt=""> <span> | Felipe Domingueti</span>
+        </div>
+        <div class="my-profile">
+            <img src="images/myprofile.png" alt="">
+            <div class="profile-div">
+                Olá! Busco com esse site, inspirado no <a href="https://www.arcade.makecode.com">Makecode Arcade</a> da Microsoft te trazer os meus projetos e um portifólio de uma maneira interativa e divertida. <br> Sou:
+                <ul>
+                    <li>Desenvolvedor Front End</li>
+                    <li>Conhecimentos em html, css, js, c, python, scratch, makecode, skript.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="long-div">
+        <div class="shade-to-black">
+            <div style="text-align: center; color: white;">
+                <h1>Olá!</h1>
+                <small>Um pouco sobre mim</small><br>
+                <button>Meus projetos</button>
+            </div>
+        </div>
+    </div>
+    <center><div class="projects-div">
+        <div class="project">
+            <div class="image">
+
+            </div>
+            <div class="text">
+                <h2>PokeYou</h2>
+                <small>Projeto em makecode arcade.</small>
+            </div>
+            <div class="project-description">
+                <p>Este projeto foi realizado nas aulas de tecnologia para explorar as capacidades de UI e diferentes sistemas no aplicativo. O jogo foi profundamente inspirado em Pokémon, contando com algumas semelhanças como o sistema de batalhas em turno e um sistema de mochilas e HP, mas tendo como diferença que você batalha ao invés de seus Pokemón</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image">
+
+            </div>
+            <div class="text">
+                <h2>Raze</h2>
+                <small>Projeto em HTML, CSS e JS</small>
+            </div>
+            <div class="project-description">
+                <p>Este projeto foi feito em HTML, CSS e JS como forma de conhecer mais a língua e fazer uma sátira ao site <a href="https://www.blaze-4.com/pt">Blaze</a>, um site de apostas online que já foi acusado de farsa, acusações essas já provadas inúmeras vezes, por isso o site replica sua estética com textos que satirizam isso, como "Seja roubado em até R$600"</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image">
+
+            </div>
+            <div class="text">
+                <h2>Melhores 10</h2>
+                <small>Projeto em HTML, CSS e JS</small>
+            </div>
+            <div class="project-description">
+                <p>Este projeto foi feito em HTML, CSS e JS, com o intúito de aprender funcões complexas no desenvolvimento de site como o JavaScript e os Divs, se trata de uma lista de os Melhores 10 de cada esporte, contanto com uma descrição do atleta.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image">
+
+            </div>
+            <div class="text">
+                <h2>Project</h2>
+                <small>This is the project pipipi popopo</small>
+            </div>
+            <div class="project-description">
+                <p>Este projeto descricao descricao aoaksdjajksd</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image">
+
+            </div>
+            <div class="text">
+                <h2>Project</h2>
+                <small>This is the project pipipi popopo</small>
+            </div>
+            <div class="project-description">
+                <p>Este projeto descricao descricao aoaksdjajksd</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="image">
+
+            </div>
+            <div class="text">
+                <h2>Project</h2>
+                <small>This is the project pipipi popopo</small>
+            </div>
+            <div class="project-description">
+                <p>Este projeto descricao descricao aoaksdjajksd</p>
+            </div>
+        </div>
+    </div></center>
+    <br>
+    <br>
+    <div class="about-me">
+        <h1 style="padding-left: 15px;">Sobre Mim</h1>
+        <div class="grid">
+            <div class="image-div">
+                <img src="images/myprofile.png" alt="" class="image">
+            </div>
+            <div class="vertical-line"></div>
+            <div class="description" style="font-size: 20px;">
+                Olá! Sou estudante da Escola Carlitos e estou criando este portifolio para mostrar o que sou e meus projetos de uma maneira divertida e descontraída, tanto para mim quanto para quem vê esse site, no caso, você! Sinta-se à vontade para explorar o site, acessar meus projetos ou ver meu currículo.
+                <br><br><button class="makecode-button">Veja Mais</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const longDiv = document.querySelector(".long-div")
+
+    let imageId = 1;
+
+    setInterval(longDivManage, 5000)
+
+
+    function longDivManage() {
+        if (imageId !== 4) {
+            imageId++;
+        }else{
+            imageId = 1;
+        }
+
+        longDiv.style.backgroundImage = "url(images/banner/" + imageId + ".png" //alternate between 1-4 url images
+    }
+</script>
+</html>
